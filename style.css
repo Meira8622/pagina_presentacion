@@ -1,0 +1,1238 @@
+/*CSS Reset / Normalize*/
+
+:root{
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #464646;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*------------------------------------------------*/
+
+@media (min-width: 769px) {
+
+    .tudo {
+        overflow-x:hidden;
+    }
+
+    /*Sección Menu*/
+
+    section.menu{
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        padding: 0 10.556vw 0 10.556vw;
+        margin: 3.556vh 0 3.556vh 0;
+    }
+
+    .menu__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.556vw;
+    }
+
+    .menu__title {
+        font-size: 1.111vw;
+    }
+
+    .menu a {
+        color: #464646;
+    }
+
+    .menu__header img {
+        flex-shrink: 0;    
+        flex-grow: 0;
+        width: 1.528vw;
+        height: auto;
+    }
+
+    .menu nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1.111vw;
+    }
+
+    .menu__list__item {
+        font-size: 1.111vw;
+    }
+
+    .menu__list li:nth-child(6) {
+        font-weight: bold;
+    }
+
+    .menu__list__item__contato a {
+        display: none;
+    }
+
+    /*Sección Title*/
+
+    section.title{
+        margin: 3.556vh 10.556vw 3.556vh 10.556vw;
+    }
+
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .title__profile {
+        margin-left: 1.111vw;
+        height: 25.556vw;
+        width: 25.556vw;
+    } 
+
+    .title__bio {
+        font-size: 3.556vw;
+        margin-bottom: 0;
+    }
+
+    .title__subsection {
+        font-weight: normal;
+        font-size: 1.444vw;
+        margin: 2.667vh 0 0 0;
+    }
+
+    .title__network {
+        display: flex;
+        gap: 1.111vw;
+        justify-content:flex-start;
+        padding: 0;
+        font-size: 1.1vw;
+        margin: 2.667vh 0 0 0;
+    }
+
+    /*Sección About*/
+
+    section.about{
+        background-color: #EAF2FD;
+        margin-bottom: 3.556vh;
+    }
+
+    .about h3 {
+        margin: 0;
+        font-size: 2.222vw;
+    }
+
+    .about__container {
+        padding: 7.111vh 0 7.111vh 0;
+        margin: 0 10.556vw 0 10.556vw;
+    }
+
+    .about__paragraph {
+        width: 52vw;
+        font-size: 1.1vw;
+    }
+
+    .about img {
+        width: 140px;
+        height: 52px;
+    }
+
+    /* Skills */
+
+    section.skills {
+        margin: 0 10.556vw 0 10.556vw;
+    }
+
+    .skills__title {
+        margin: 0 0 3.556vh 0;
+        text-align: center;
+        font-size: 2.222vw;
+    }
+
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .skills__box {
+        background-color: white;
+        height: 12.153vw;
+        width: 12.153vw;
+        margin: 0 0 9.778vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .skills__box ul {
+        padding: 0 0 0 1.111vw;
+    }
+
+    .skills img {
+        margin-bottom: 1.778vh;
+        height: 4.111vh;
+    }
+
+    .skills__name {
+        font-weight: bold;
+        font-size: 1.111vw;
+    }
+
+    /*Sección Hobbies*/
+
+    section.hobbies {
+        margin: 0 10.556vw 0 10.556vw;
+    }
+
+    .hobbies__title {
+        margin: 0 0 3.556vh 0;
+        text-align: center;
+        font-size: 2.222vw;
+    }
+
+    .hobbies__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .hobbies__box {
+        background-color: white;
+        height: 12.153vw;
+        width: 12.153vw;
+        margin: 0 0 9.778vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .hobbies__box ul {
+        padding: 0 0 0 1.111vw;
+    }
+
+    .hobbies img {
+        margin-bottom: 1.778vh;
+        height: 4.111vh;
+    }
+
+    .hobbies__name {
+        font-weight: bold;
+        font-size: 1.111vw;
+    }
+
+    /* Experiencia Académica*/
+
+    section.academic{
+        background-color: #EAF2FD;
+        padding-top: 5.694vw;
+        padding-bottom: 5.694vw;
+    }
+
+    .academic__title {
+        margin: 0 0 3.556vh 0;
+        text-align: center;
+        font-size: 2.222vw;
+    }
+
+    .academic__courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.111vw;
+    }
+
+    .academic__courses__box {
+        /* height: 347px;
+        width: 368px; */
+        margin: 0 0 1.778vh 0;;
+    }
+
+    .academic__courses__list {
+        margin: 0;
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .academic__courses__item__img {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        width: 25.556vw;
+        height: 31.778vh;
+    }
+
+    .academic__courses__item__img img {
+        height: auto;
+        width: 13.333vw;
+    }
+
+    .academic__courses__list h4,
+    .academic__courses__list p {
+        margin: 0.889vh 0 0 0;
+        font-size: 1.528vw;
+    }
+
+    /* experiencia*/
+
+    section.experience{
+        padding-top: 3.556vh;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience__section__title {
+        margin: 0 0 3.556vh 0;
+        font-size: 2.222vw;
+    }
+
+    .experience__box {
+        margin: 0 9.444vw 64px 9.444vw;
+        display: flex;
+        width: 78.889vw;
+    }
+
+    .experience > div:nth-child(3) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .experience > div:nth-child(5) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .experience img {
+        width: 52.222vw;
+        height: 28.194vw;
+    }
+
+    .experience__info {
+        align-self: center;
+        margin: 0 0 0 1.111vw;
+        /* height: 112px; */
+    }
+
+    .experience__title {
+        margin-bottom: 8px;
+        font-size: 1.25vw;
+    }
+
+    .experience__text {
+        margin: 0 0 1.778vh 0;
+        font-size: 1.528vw;
+        font-weight: normal;
+    }
+
+    .experience button {
+        width: 8.056vw;
+        height: 5.667vh;
+        font-size: 1vw;
+    }
+
+    .experiencie__botao--repo {
+        background-color: #F5F5F5;
+        color: #2A7AE4;
+        border-color: #2A7AE4;
+        border-style: solid;
+    }
+
+    .experience__botao--demo {
+        background-color: #2A7AE4;
+        color: #F5F5F5;
+        border-color: #2A7AE4;
+        border-style: solid;
+    }
+
+    /*Contacto*/
+
+    section.formcontato{
+        background-color:#EAF2FD;
+        width: 100%;
+    }
+
+    .formcontato__contacto {
+        display: flex;
+        margin: 14.222vh 10.556vw 7.111vh 10.556vw;
+        gap: 1vw;
+        height: 65.889vh;
+    }
+
+    .formcontato img {
+        width: 32.222vw;
+        height: 100%;
+    }
+
+    .formcontato__text {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+
+    .formcontato__title {
+        margin: 0 0 0.889vh 0;
+        font-size: 2.222vw;
+    }
+
+    .formcontato__text > :nth-child(3) {
+        margin-bottom: auto;
+    }
+
+    .formcontato__subtext {
+        margin: 0 0 0.444vh 0;
+        font-size: 1.111vw;
+        font-weight: normal;
+    }
+
+    .formcontato__form {
+        margin: 3.556vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        width: 45.556vw;
+        font-size: 1.111vw;
+    }
+
+    .input_label {
+        background-color:white;
+        color: #A2A2A2;
+        font-size: 0.833vw;
+        border-radius: 5px 5px 0 0;
+        text-indent: 12px;
+        line-height: 2;
+        /* width: 43.5vw; */
+    }
+
+    .formcontato__input {
+        margin: 0 0 3.556vh 0;
+        height: 3.333vh;
+        /* width: 43vw; */
+        border: none;
+        border-radius: 0 0 5px 5px;
+        text-indent: 10px;
+        box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+        font-size: 1.111vw;
+    }
+
+    .formcontato__input::placeholder {
+        color: #A2A2A2;
+
+    }
+
+    .formcontato__textarea {
+        margin: 0 0 3.556vh 0;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+        color: #A2A2A2;
+        height: auto;
+        font-size: 1.111vw;
+    }
+
+    .formcontato__textarea::placeholder {
+        color: #A2A2A2;
+        text-indent: 10px;
+    }
+
+    .formcontato__form button {
+        background-color: #2A7AE4;
+        color: #EAF2FD;
+        border: none;
+    }
+
+    /*footeer*/
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.111vw;
+    }
+
+    section.footer{
+        padding: 1.778vh 0 1.778vh 0;
+        line-height: 0.5;
+    }
+
+}
+
+/*Tablet*/
+@media (max-width: 769px) {
+
+    .tudo {
+        overflow-x: hidden;
+    }
+    
+    /*Sección Menu*/
+    
+    section.menu{
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        padding: 0 4.167vw 0 4.167vw;
+    }
+    
+    .menu__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.042vw;
+    }
+    
+    .menu a {
+        color: #464646;
+    }
+    
+    .menu__header img {
+        flex-shrink: 0;    
+        flex-grow: 0;
+        width: 3.125vw;
+        height: auto;
+    }
+    
+    .menu__title {
+        font-size: 2.083vw;
+    }
+
+    .menu nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .menu__list__item__contato a {
+        display: inline;
+        vertical-align: sub;
+        font-size: 2.083vw;
+        font-weight: bold;
+    }
+    
+    /*Sección Title*/
+    
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .title__profile {
+        margin: 4.167vw;
+        width: 19.01vw;
+        height: 19.01vw;
+    }
+    
+    .title__container {
+        margin: 4.167vw 0 4.167vw 4.167vw; 
+    }
+    
+    .title__bio {
+        font-size: 2.865vw;
+    }
+    
+    .title__subsection {
+        font-weight: normal;
+        font-size: 2.083vw;
+    }
+    
+    .title__network {
+        display: flex;
+        gap: 2.083vw;
+        justify-content:flex-start;
+        padding: 0;
+        font-size: 2.083vw;
+    }
+    
+    /*Sección About*/
+    
+    section.about{
+        background-color: #EAF2FD;
+    }
+    
+    .about h3 {
+        margin-top: 0;
+        font-size: 2.865vw;
+    }
+    
+    .about__container {
+        padding: 4.167vw 0 4.167vw 0;
+        margin: 0 4.167vw 0 4.167vw;
+    }
+
+    .about__paragraph {
+        font-size: 1.823vw;
+    }
+    
+    .about img {
+        width: 140px;
+        height: 52px;
+    }
+
+
+    
+    /* Skills */
+    
+    .skills__title {
+        margin: 2.083vw 0 4.167vw 0;
+        text-align: center;
+        font-size: 2.865vw;
+    }
+    
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.083vw;
+    }
+    
+    .skills__box {
+        background-color: white;
+        height: 15.365vw;
+        width: 29.167vw;
+        margin: 0 0 4.167vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .skills__box ul {
+        padding: 0 0 0 2.083vw;
+    }
+
+    .skills__name {
+        font-size: 2.083vw;
+        font-weight: bold;
+    }
+
+    .skills__img {
+        width: 3.385vw;
+        height: auto;
+    }
+    
+    /*Sección Hobbies*/
+    
+    .hobbies h3 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 2.865vw;
+    }
+    
+    .hobbies__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.083vw;
+    }
+    
+    .hobbies__box {
+        background-color: white;
+        height: 15.365vw;
+        width: 29.167vw;
+        margin: 0 0 4.167vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .hobbies__box ul {
+        padding: 0 0 0 2.083vw;
+    }
+
+    .hobbies__name {
+        font-size: 2.083vw;
+        font-weight: bold;
+    }
+
+    .hobbies__img {
+        width: 3.385vw;
+        height: auto;
+    }
+    
+    /* Experiencia Académica*/
+    
+    section.academic{
+        background-color: #EAF2FD;
+        padding: 4.167vw 0 4.167vw 0;
+    }
+    
+    .academic__title {
+        margin: 0 0 32px 0;
+        text-align: center;
+        font-size: 2.865vw;
+    }
+    
+    .academic__courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.083vw;
+    }
+    
+    .academic__courses__box {
+        height: 22.005vw;
+        width: 29.167vw;
+        margin: 0 0 16px 0;
+    }
+    
+    .academic__courses__list {
+        margin: 0;
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    
+    .academic__courses__item__img {
+        background-color: white;
+        height: 15.365vw;
+        width: 29.167vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .academic__courses__list h4,
+    .academic__courses__list p {
+        margin: 8px 0 0 0;
+    }
+    
+    .academic img {
+        height: auto;
+        width: 13.281vw;
+    }
+    
+    /* experiencia*/
+    
+    section.experience{
+        padding-top: 32px;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experience__section__title {
+        margin-top: 0;
+        font-size: 2.865vw;
+    }
+    
+    .experience__box {
+        height: 55.599vw;
+        width: 91.667vw;
+        margin-bottom: 64px;
+    }
+    
+    .experience img {
+        width: 91.667vw;
+        height: 41.667vw;
+    }
+    
+    .experience__title {
+        margin-bottom: 8px;
+        font-size: 2.083vw;
+    }
+    
+    .experience__text {
+        margin: 0 0 8px 0;
+        font-size: 1.823vw;
+        font-weight: normal;
+    }
+    
+    .experience button {
+        width: 14.063vw;
+        height: 5.208vw;
+        font-size: 1.823vw;
+    }
+    
+    .experiencie__botao--repo {
+        background-color: #F5F5F5;
+        color: #2A7AE4;
+        border-color: #2A7AE4;
+        border-style: solid;
+    }
+    
+    .experience__botao--demo {
+        background-color: #2A7AE4;
+        color: #F5F5F5;
+        border-color: #2A7AE4;
+        border-style: solid;
+    }
+    
+    /*Contacto*/
+    
+    section.formcontato{
+        background-color:#EAF2FD;
+        width: 100%;
+    }
+    
+    .formcontato__contacto {
+        margin: 32px;
+    }
+    
+    .formcontato__img {
+        display: none;
+    }
+    
+    .formcontato__text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formcontato__title {
+        margin: 0 0 8px 0;
+        font-size: 2.865vw;
+    }
+    
+    .formcontato__subtext {
+        margin: 0 0 0 0;
+        font-size: 2.083vw;
+        font-weight: normal;
+    }
+    
+    .formcontato__form {
+        margin: 32px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input_label {
+        background-color:white;
+        color: #A2A2A2;
+        font-size: 12px;
+        border-radius: 5px 5px 0 0;
+        text-indent: 12px;
+        line-height: 2;
+    }
+    
+    .formcontato__input {
+        margin: 0 0 32px 0;
+        height: 30px;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        text-indent: 10px;
+        box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .formcontato__input::placeholder {
+        color: #A2A2A2;
+    }
+    
+    .formcontato__textarea {
+        margin: 0 0 32px 0;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+        color: #A2A2A2;
+        height: 14.714vw;
+    }
+    
+    .formcontato__textarea::placeholder {
+        color: #A2A2A2;
+        text-indent: 10px;
+    }
+    
+    .formcontato__form button {
+        background-color: #2A7AE4;
+        color: #EAF2FD;
+        border: none;
+        width: 14.714vw;
+        font-size: 1.823vw;
+    }
+    
+    /*footeer*/
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    section.footer{
+        padding: 16px 0 16px 0;
+        line-height: 0.5;
+    }
+    
+   
+}
+
+/*Mobile*/
+
+@media (max-width: 426px) {
+
+    .tudo {
+        overflow-x: hidden;
+    }
+    
+    /*Sección Menu*/
+    
+    section.menu{
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        padding: 0 16px 0 16px;
+    }
+    
+    .menu__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .menu a {
+        color: #464646;
+    }
+    
+    .menu__header img {
+        flex-shrink: 0;    
+        flex-grow: 0;
+        width: 1.375rem;
+        height: 1.375rem;
+    }
+    
+    .menu nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .menu__list__item__contato a {
+        display: inline;
+        vertical-align: sub;
+        font-size: 14px;
+    }
+    
+    /*Sección Title*/
+    
+    section.title{
+        margin: 1rem 0 1rem 0;
+    }
+    
+    .title__profile {
+        margin-left: 16px;
+        height: 98px;
+        width: 98px;
+    }
+    
+    .title__container {
+        margin: 1rem;
+    }
+    
+    .title__bio {
+        font-size: 22px;
+    }
+    
+    .title__subsection {
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+    .title__network {
+        display: flex;
+        gap: 1rem;
+        justify-content:flex-start;
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    /*Sección About*/
+    
+    section.about{
+        background-color: #EAF2FD;
+    }
+    
+    .about h3 {
+        margin-top: 0;
+    }
+    
+    .about__container {
+        padding: 1rem 0 1rem 0;
+        margin: 0 1rem 0 1rem;
+    }
+    
+    .about img {
+        width: 140px;
+        height: 52px;
+    }
+    
+    /* Skills */
+    
+    .skills__title {
+        margin: 1rem 0 2rem 0;
+        text-align: center;
+    }
+    
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .skills__box {
+        background-color: white;
+        height: 118px;
+        width: 156px;
+        margin: 0 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .skills__box ul {
+        padding: 0 0 0 1rem;
+    }
+    
+    /*Sección Hobbies*/
+    
+    .hobbies h3 {
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .hobbies__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hobbies__box {
+        background-color: white;
+        height: 118px;
+        width: 156px;
+        margin: 0 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .hobbies__box ul {
+        padding: 0 0 0 1rem;
+    }
+    
+    /* Experiencia Académica*/
+    
+    section.academic{
+        background-color: #EAF2FD;
+        padding-top: 32px;
+    }
+    
+    .academic__title {
+        margin: 0 0 32px 0;
+        text-align: center;
+    }
+    
+    .academic__courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .academic__courses__box {
+        height: 169px;
+        width: 296px;
+        margin: 0 0 16px 0;
+    }
+    
+    .academic__courses__list {
+        margin: 0;
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    
+    .academic__courses__item__img {
+        background-color: white;
+        height: 118px;
+        width: 296px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .academic__courses__list h4,
+    .academic__courses__list p {
+        margin: 8px 0 0 0;
+    }
+    
+    .academic img {
+        height: 54px;
+        width: 84px;
+    }
+    
+    /* experiencia*/
+    
+    section.experience{
+        padding-top: 32px;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experience__section__title {
+        margin-top: 0;
+    }
+    
+    .experience__box {
+        height: 251px;
+        width: 296px;
+        margin-bottom: 64px;
+    }
+    
+    .experience img {
+        width: 296px;
+        height: 144px;
+    }
+    
+    .experience__title {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    
+    .experience__text {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    
+    .experience button {
+        width: 108px;
+        height: 40px;
+    }
+    
+    .experiencie__botao--repo {
+        background-color: #F5F5F5;
+        color: #2A7AE4;
+        border-color: #2A7AE4;
+        border-style: solid;
+    }
+    
+    .experience__botao--demo {
+        background-color: #2A7AE4;
+        color: #F5F5F5;
+        border-color: #2A7AE4;
+        border-style: solid;
+    }
+    
+    /*Contacto*/
+    
+    section.formcontato{
+        background-color:#EAF2FD;
+    }
+    
+    .formcontato__contacto {
+        margin: 32px;
+    }
+    
+    .formcontato__img {
+        display: none;
+    }
+    
+    .formcontato__text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formcontato__title {
+        margin: 0 0 8px 0;
+    }
+    
+    .formcontato__subtext {
+        margin: 0 0 0 0;
+        font-size: 16px;
+    }
+    
+    .formcontato__form {
+        margin: 32px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input_label {
+        background-color:white;
+        color: #A2A2A2;
+        font-size: 12px;
+        border-radius: 5px 5px 0 0;
+        text-indent: 12px;
+        line-height: 2;
+    }
+    
+    .formcontato__input {
+        margin: 0 0 32px 0;
+        height: 30px;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        text-indent: 10px;
+        box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .formcontato__input::placeholder {
+        color: #A2A2A2;
+    }
+    
+    .formcontato__textarea {
+        margin: 0 0 32px 0;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
+        color: #A2A2A2;
+    }
+    
+    .formcontato__textarea::placeholder {
+        color: #A2A2A2;
+        text-indent: 10px;
+    }
+    
+    .formcontato__form button {
+        background-color: #2A7AE4;
+        color: #EAF2FD;
+        border: none;
+    }
+    
+    /*footeer*/
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    section.footer{
+        padding: 16px 0 16px 0;
+        line-height: 0.5;
+    }   
+}
