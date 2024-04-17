@@ -478,7 +478,7 @@ a{
 }
 
 /*Tablet*/
-@media (max-width: 769px) {
+@media (min-width: 426px) and (max-width: 769px) {
 
     .tudo {
         overflow-x: hidden;
@@ -589,8 +589,6 @@ a{
         width: 140px;
         height: 52px;
     }
-
-
     
     /* Skills */
     
@@ -628,6 +626,11 @@ a{
 
     .skills__img {
         width: 3.385vw;
+        height: auto;
+    }
+
+    .skills img {
+        width: 3.385vw;;
         height: auto;
     }
     
@@ -670,6 +673,11 @@ a{
         height: auto;
     }
     
+    .hobbies img {
+        width: 3.385vw;;
+        height: auto;
+    }
+
     /* Experiencia Académica*/
     
     section.academic{
@@ -687,7 +695,7 @@ a{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2.083vw;
+        gap: 5.083vw;
     }
     
     .academic__courses__box {
@@ -697,7 +705,7 @@ a{
     }
     
     .academic__courses__list {
-        margin: 0;
+        margin: 0 0 0 0;
         padding: 0 0 0 0;
         display: flex;
         flex-direction: column;
@@ -714,6 +722,14 @@ a{
         justify-content: center;
     }
     
+    .academic__courses__item__title {
+        font-size: 2.083vw;
+    }
+
+    .academic__courses__item__subtitle {
+        font-size: 1.823vw;
+    }
+
     .academic__courses__list h4,
     .academic__courses__list p {
         margin: 8px 0 0 0;
@@ -1010,6 +1026,11 @@ a{
     .skills__box ul {
         padding: 0 0 0 1rem;
     }
+
+    .skills img {
+        width: 7.529vw;
+        height: auto;
+    }
     
     /*Sección Hobbies*/
     
@@ -1037,6 +1058,11 @@ a{
     
     .hobbies__box ul {
         padding: 0 0 0 1rem;
+    }
+
+    .hobbies img {
+        width: 7.529vw;
+        height: auto;
     }
     
     /* Experiencia Académica*/
@@ -1074,10 +1100,10 @@ a{
     .academic__courses__item__img {
         background-color: white;
         height: 118px;
-        width: 296px;
+        width: 69.647vw;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-self: center;
         justify-content: center;
     }
     
@@ -1087,9 +1113,20 @@ a{
     }
     
     .academic img {
-        height: 54px;
-        width: 84px;
+        height: auto;
+        width: 19.765vw;
+        align-self: center;
     }
+
+    .academic__courses__item__title {
+        font-size: 3.765vw;
+        align-self: center;
+    }
+
+    .academic__courses__item__subtitle {
+        font-size: 3.765vw;
+        align-self: center;
+    }   
     
     /* experiencia*/
     
