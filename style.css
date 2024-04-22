@@ -374,7 +374,7 @@ a{
         display: flex;
         margin: 14.222vh 10.556vw 7.111vh 10.556vw;
         gap: 1vw;
-        height: 65.889vh;
+        height: 79.889vh;
     }
 
     .formcontato img {
@@ -434,7 +434,6 @@ a{
 
     .formcontato__input::placeholder {
         color: #A2A2A2;
-
     }
 
     .formcontato__textarea {
@@ -442,9 +441,11 @@ a{
         border-radius: 5px;
         border: none;
         box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
-        color: #A2A2A2;
         height: auto;
         font-size: 1.111vw;
+        resize: none;
+        color: black;
+        text-indent: 10px;
     }
 
     .formcontato__textarea::placeholder {
@@ -860,8 +861,10 @@ a{
         border-radius: 5px;
         border: none;
         box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
-        color: #A2A2A2;
         height: 14.714vw;
+        resize: none;
+        color: black;
+        text-indent: 10px;
     }
     
     .formcontato__textarea::placeholder {
@@ -1243,7 +1246,9 @@ a{
         border-radius: 5px;
         border: none;
         box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.5);
-        color: #A2A2A2;
+        resize: none;
+        color: black;
+        text-indent: 10px;
     }
     
     .formcontato__textarea::placeholder {
